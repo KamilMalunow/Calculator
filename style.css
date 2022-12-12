@@ -1,0 +1,84 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(231, 225, 225);
+    background: url("background.png");
+}
+
+.container {
+    max-width: 400px;
+    margin: 20vh auto;
+}
+
+.calculator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 1px 0px 47px 6px rgba(66, 68, 90, 1);
+}
+
+.calculator__display--result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(238, 234, 234);
+    min-height: 120px;
+}
+
+
+.previous--numbers,
+.mathSign {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+.current--number {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 5px 0 0;
+    font-size: 3rem;
+}
+
+.calculator__function--buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.buttons {
+    border: transparent;
+    background-color: rgb(87, 85, 85);
+    color: #fff;
+    min-width: 85px;
+    min-height: 85px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: rgb(58, 56, 56);
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .calculator,
+    .calculator__display--result {
+        min-width: 99%;
+    }
+
+    .calculator__function--buttons {
+        min-width: 99%;
+    }
+
+    .buttons {
+        min-width: 60px;
+        min-height: 60px;
+    }
+}
