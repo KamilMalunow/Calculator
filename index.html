@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-   
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="calculator">
-            <div class="calculator__display--result js-numbers">
+            <div class="calculator__display--result">
                 <div class="previous--signs">
-                    <p class="previous--numbers Js-previousNumber"></p>
-                    <p class="mathSign Js-mathSign"></p>
+                    <p class="previous--numbers js-previousNumber"></p>
+                    <p class="mathSign js-mathSign"></p>
                 </div>
-                <div class="current--number"></div>
+                <div class="current--number js-currentNumber"></div>
             </div>
             <div class="calculator__function--buttons">
                 <div class="buttons js-numbers">7</div>
@@ -32,10 +32,10 @@
                 <div class="buttons js-numbers">3</div>
                 <div class="buttons js-numbers">2</div>
                 <div class="buttons js-numbers">1</div>
-                <div class="buttons js-equals">-</div>
+                <div class="buttons js-math--symbols">-</div>
                 <div class="buttons js-reset">C</div>
                 <div class="buttons js-numbers">0</div>
-                <div class="buttons js-math--symbols">=</div>
+                <div class="buttons js-equals">=</div>
                 <div class="buttons js-math--symbols">+</div>
             </div>
         </div>

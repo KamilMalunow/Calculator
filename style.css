@@ -19,11 +19,11 @@ html {
 }
 
 .calculator__display--result {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+
     background-color: rgb(238, 234, 234);
-    min-height: 120px;
+    min-height: 150px;
 }
 
 
@@ -38,8 +38,10 @@ html {
 .current--number {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 5px 0 0;
+    align-items: flex-end;
+    margin: 5px 5px 0 0;
     font-size: 3rem;
+    
 }
 
 .calculator__function--buttons {
@@ -52,8 +54,8 @@ html {
     border: transparent;
     background-color: rgb(87, 85, 85);
     color: #fff;
-    min-width: 85px;
-    min-height: 85px;
+    min-width: 60px;
+    min-height: 90px;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -64,7 +66,6 @@ html {
 .buttons:hover {
     background-color: rgb(58, 56, 56);
 }
-
 
 @media only screen and (max-width: 400px) {
 
